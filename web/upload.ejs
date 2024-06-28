@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Тестовое задание с панелью PDF файлов для ТрансМашПрибора">
+    <meta name="keywords" content="test, task">
+
+    <meta property="og:title" content="Тестовое задание ТрансМашПрибор" />
+    <meta property="og:image" content="https://i.imgur.com/EXvsu4r.png" />
+    <meta property="og:description" content="Тестовое задание с панелью PDF файлов для ТрансМашПрибора" />
+    <meta name="theme-color" content="#808080">
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
+    <script src="./js/upload.js"></script>
+
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/upload.css" rel="stylesheet" />
+    <title>Тестовое задание</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-item">
+            <a href="/"><img class="small-icon" src="./img/icon.png"></a>
+        </div>
+
+        <div class="nav-item">
+            <a class="nav-item" href="/upload"><img class="small-icon" src="./img/icon-upload.svg">Загрузить файл</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h1>Загрузка файла PDF</h1>
+        <div class="file-upload-container">
+            <div class="container-item">
+                <div class="form-title">Название: </div>
+                <input 
+                    type="text" 
+                    id="nameInput" 
+                    maxlength="60"
+                    placeholder="Название файла (title)">
+            </div>
+
+            <div class="container-item">
+                <div class="form-title">Название ссылки: </div>
+                <input 
+                    type="text" 
+                    id="secretInput" placeholder="Ссылка (secret)">
+            </div>
+
+            <div class="container-item">
+                <div class="item-border">
+                    <pre id="uploadFile" class="upload-file"><img class="file-icon" src="./img/icon-file.svg" alt="Иконка файла">Перетащите или нажмите 
+чтобы загрузить файл</pre>
+                </div>
+            </div>
+
+            <div class="container-item">
+                <div id="errorText" class="error-text" style="display: none;">
+                    ОШИБКА: Все поля должны быть заполнены
+                </div>
+            </div>
+            
+            <div class="container-item">
+                <a id="btn-add" class="button effect01">
+                    <span>Добавить</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
